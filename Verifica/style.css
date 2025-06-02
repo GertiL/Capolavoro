@@ -1,0 +1,129 @@
+/* Generale */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0c9a91, #033641);
+    text-align: center;
+    padding: 50px;
+}
+
+/* Contenitore */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Titolo */
+.title {
+    font-size: 30px;
+    margin: 5px 0;
+    color: #0c9a91;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.highlight {
+    color: #0c729a;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Sezione input */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #0c9a9a;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #0c9a91;
+}
+
+/* Bottoni */
+button {
+    background: #39f070;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #109739;
+}
+
+/* Lista attività */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+li {
+    background: #fff5f5;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Animazione fade-in per gli elementi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+li {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Pulsante elimina singolo task */
+.delete-btn {
+    background: none;
+    border: none;
+    color: #ff4757;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    color: #9f2919;
+}
+
+/* Pulsante per svuotare la lista */
+.clear-btn {
+    margin-top: 15px;
+    background: #c0392b;
+}
+
+.clear-btn:hover {
+    background: #962111;
+}
